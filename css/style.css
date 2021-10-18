@@ -1,0 +1,254 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+/*------------------------------------------------*/
+.wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/*------------------------------------------------*/
+._container {
+    max-width: 1140px;
+    padding: 0px 0px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+._ibj {
+    position: relative;
+}
+._ibj img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+/*----------------header--------------------------*/
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header__container {}
+ 
+.header__first {
+    background: #F5F5F6;
+}
+.header__first__container {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media (max-width: 992px){ /*телефон*/
+    .header__first__container   {
+        margin: 0px 10px;
+      }
+}
+
+.header__logo {}
+.header__menu {
+    margin: 0px 0px 0px 496.7px;
+}
+@media (max-width: 992px){ /*телефон*/
+    .header__menu {
+        margin: 0px 0px 0px 80px;
+    }
+}
+@media (max-width: 737px){ /*телефон*/
+    .header__menu {
+        margin: 0px 0px 0px 20px;
+    }
+}
+ 
+.menu {
+    padding: 5px 0px ;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+
+.menu__item {
+    margin-right: 40px;
+    padding: 11px;
+}
+@media(max-width: 630px){
+    .menu__item {
+        margin-right: 10px;
+    }
+}
+
+ 
+.menu__link {
+    color: #666666;
+    line-height: 91.6%;
+}
+.language {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 20px;
+    height: 20px;
+    width: 60px;
+    height: 27px;
+}
+.language__image {
+
+}
+.language__name {
+
+}
+.language__arrow-downwward {
+
+}
+
+
+.header__second {
+    background: #FFFFFF;
+}
+.header__second__container {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 992px){ /*телефон*/
+    .header__second__container   {
+        margin: 0px 10px;
+      }
+}
+.menu__header__accounts {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__accounts {}
+.accounts__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.accounts__item {
+    margin-right: 10px;
+}
+.accounts__item:not(:last-child){
+    margin-right: 47px;
+}
+.accounts__link {
+    color:   #333333;
+}
+.header__button {
+    display: flex;
+    background: rgba(30, 31, 36, 0.3);
+    border-radius: 3px;
+    min-height: 13.5px;
+    width: 40px;
+
+    align-items: center;
+    justify-content: center;
+    padding: 1.25px 1.25px;
+
+    
+}
+.header__button__link {
+    color: #FFFFFF;
+    font-size: 12px;
+ }
+
+.menu_for_viewing_your-product {
+}
+.your-product_list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    
+}
+.your-product_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #F5F5F6;
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+ }
+.your-product_item:not(:last-child){
+    margin-right: 29px;
+}
+
+.the-product-you-liked__link {}
+.the-product-you-liked {}
+.the-product-you-liked__img {}
+.the-product-you-liked__sum {
+    position: absolute;
+    background: linear-gradient(225deg, #DE644E 0%, #FF0000 100%);
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    top: -10px;
+    right: -10px;
+}
+
+.the-product-in-your-bag {}
+.the-product-in-your-bag__link {}
+.the-product-in-your-bag__img {}
+.the-product-in-your-bag__sum {
+    position: absolute;
+    background: linear-gradient(225deg, #DE644E 0%, #FF0000 100%);
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    top: -10px;
+    right: -10px;
+}
+
+
+
+
+
+
+/*----------------page--------------------------*/
+.page {
+    background-color: lawngreen;
+    flex: 1 1 auto;
+}
